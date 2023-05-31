@@ -1,0 +1,1 @@
+  CREATE_STREAM @4000 {NAME:l_seq T:Transactions SCOPE:uvm_test_top.env.i_agt1.sqr STREAM:881}

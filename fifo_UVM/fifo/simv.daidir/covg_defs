@@ -1,0 +1,71 @@
+global coverage_group 0 $unit::my_driver::cov_label __coverage_my_driver.cov_label unused_my_driver_cov_label_loop_label $unit 0 1 0 1 $unit::/tools/synopsys/vcs-mx/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/src/macros/uvm_callback_defines.svh::/tools/synopsys/vcs-mx/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/src/macros/uvm_deprecated_defines.svh...@2656887399 0  ( 0 
+)
+ 1 1
+ 37 /home/eda/Documents/fifo/my_driver.sv
+ 10 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 99 _vcs_unit__2656887399_my_driver_11_0::_vcs_unit__2656887399_my_driver_11_0_my_driver_cov_label_fn_2 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 99 _vcs_unit__2656887399_my_driver_11_0::_vcs_unit__2656887399_my_driver_11_0_my_driver_cov_label_fn_1
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 12 my_if2.wfull 13 0 0 0 0 97 _vcs_unit__2656887399_my_driver_11_0::_vcs_unit__2656887399_my_driver_11_0_my_driver_cov_label_fn 97 _vcs_unit__2656887399_my_driver_11_0::_vcs_unit__2656887399_my_driver_11_0_my_driver_cov_label_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 13 my_if2.rempty 14 0 0 0 0 99 _vcs_unit__2656887399_my_driver_11_0::_vcs_unit__2656887399_my_driver_11_0_my_driver_cov_label_fn_0 99 _vcs_unit__2656887399_my_driver_11_0::_vcs_unit__2656887399_my_driver_11_0_my_driver_cov_label_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

@@ -1,0 +1,157 @@
+verdiWindowResize -win $_Verdi_1 "0" "24" "1920" "1056"
+debImport "-full64" "-f" "filelist"
+debLoadSimResult /home/fguo/Desktop/fifo/tb.fsdb
+wvCreateWindow
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiWindowWorkMode -win $_Verdi_1 -hardwareDebug
+srcHBSelect "top_tb.asyn_fifo1" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top_tb.asyn_fifo1" -delim "."
+srcSignalView -on
+srcSignalViewSelect "top_tb.asyn_fifo1.rclk"
+srcSignalViewSelect "top_tb.asyn_fifo1.rclk" "top_tb.asyn_fifo1.rinc" \
+           "top_tb.asyn_fifo1.rrst_n" "top_tb.asyn_fifo1.wclk" \
+           "top_tb.asyn_fifo1.winc" "top_tb.asyn_fifo1.wrst_n" \
+           "top_tb.asyn_fifo1.wdata\[7:0\]" "top_tb.asyn_fifo1.rempty" \
+           "top_tb.asyn_fifo1.wfull" "top_tb.asyn_fifo1.rdata\[7:0\]" \
+           "top_tb.asyn_fifo1.raddr\[3:0\]" "top_tb.asyn_fifo1.rptr\[4:0\]" \
+           "top_tb.asyn_fifo1.rq2_wptr\[4:0\]" \
+           "top_tb.asyn_fifo1.waddr\[3:0\]" "top_tb.asyn_fifo1.wptr\[4:0\]" \
+           "top_tb.asyn_fifo1.wq2_rptr\[4:0\]"
+srcSignalViewSelect "top_tb.asyn_fifo1.rclk" "top_tb.asyn_fifo1.rinc" \
+           "top_tb.asyn_fifo1.rrst_n" "top_tb.asyn_fifo1.wclk" \
+           "top_tb.asyn_fifo1.winc" "top_tb.asyn_fifo1.wrst_n" \
+           "top_tb.asyn_fifo1.wdata\[7:0\]" "top_tb.asyn_fifo1.rempty" \
+           "top_tb.asyn_fifo1.wfull" "top_tb.asyn_fifo1.rdata\[7:0\]" \
+           "top_tb.asyn_fifo1.raddr\[3:0\]" "top_tb.asyn_fifo1.rptr\[4:0\]" \
+           "top_tb.asyn_fifo1.rq2_wptr\[4:0\]" \
+           "top_tb.asyn_fifo1.waddr\[3:0\]" "top_tb.asyn_fifo1.wptr\[4:0\]" \
+           "top_tb.asyn_fifo1.wq2_rptr\[4:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvZoom -win $_nWave2 0.000000 149344.375000
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvExpandBus -win $_nWave2 {("G1" 16)}
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSetPosition -win $_nWave2 {("G1" 16)}
+wvCollapseBus -win $_nWave2 {("G1" 16)}
+wvSetPosition -win $_nWave2 {("G1" 16)}
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+srcHBSelect "top_tb.asyn_fifo1.wptr_full11" -win $_nTrace1
+srcHBSelect "top_tb.asyn_fifo1.wptr_full11" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top_tb.asyn_fifo1.wptr_full11" -delim "."
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvExpandBus -win $_nWave2 {("G1" 16)}
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSetPosition -win $_nWave2 {("G1" 16)}
+wvCollapseBus -win $_nWave2 {("G1" 16)}
+wvSetPosition -win $_nWave2 {("G1" 16)}
+schCreateWindow -delim "." -win $_nSchema1 -scope "top_tb.asyn_fifo1.wptr_full11"
+srcSignalView -off
+verdiDockWidgetMaximize -dock windowDock_nSchema_3
+schZoomIn -win $_nSchema3
+schZoomIn -win $_nSchema3
+schZoomOut -win $_nSchema3
+schZoomOut -win $_nSchema3
+schZoomOut -win $_nSchema3
+schZoomOut -win $_nSchema3
+schZoomOut -win $_nSchema3
+srcSignalView -on
+srcSignalView -off
+srcSignalView -on
+verdiDockWidgetRestore -dock windowDock_nSchema_3
+srcHBSelect "top_tb.asyn_fifo1.sync_w2r11" -win $_nTrace1
+srcHBSelect "top_tb.asyn_fifo1.sync_w2r11" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top_tb.asyn_fifo1.sync_w2r11" -delim "."
+schCreateWindow -delim "." -win $_nSchema1 -scope "top_tb.asyn_fifo1.sync_w2r11"
+srcSignalView -off
+verdiDockWidgetMaximize -dock windowDock_nSchema_4
+schZoomOut -win $_nSchema4
+schZoomOut -win $_nSchema4
+schSelect -win $_nSchema4 -inst "sync_w2r\(@1\):Always0:31:35:Reg"
+schSelect -win $_nSchema4 -inst "sync_w2r\(@1\):Always0:31:35:Reg"
+schSelect -win $_nSchema4 -inst "sync_w2r\(@1\):Always0:31:35:Reg"
+schDeselectAll -win $_nSchema4
+schSelect -win $_nSchema4 -port "rclk"
+schDeselectAll -win $_nSchema4
+schSelect -win $_nSchema4 -signal "rq1_wptr\[4:0\]"
+schSelect -win $_nSchema4 -port "rq2_wptr\[4:0\]"
+srcSignalView -on
+srcSignalView -off
+srcSignalView -on
+verdiDockWidgetRestore -dock windowDock_nSchema_4
+srcHBSelect "top_tb.asyn_fifo1.sync_w2r11" -win $_nTrace1
+srcHBSelect "top_tb.asyn_fifo1.sync_w2r11" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top_tb.asyn_fifo1.sync_w2r11" -delim "."
+uvmCreatePhaseWin
+uvmPhaseHierViewColumnSort -column 0 -ascending
+uvmPhaseHierOffPhaseWin
+uvmPhaseHierOnPhaseWin
+uvmPhaseHistOffPhaseWin
+uvmPhaseHistOnPhaseWin
+uvmPhaseHierOffPhaseWin
+uvmPhaseHistViewColumnSort -column 0 -ascending
+uvmPhaseHistViewColumnSort -column 0 -descending
+uvmPhaseHistViewColumnSort -column 0 -ascending
+uvmPhaseHistOffPhaseWin
+uvmPhaseHierOnPhaseWin
+uvmPhaseHistOnPhaseWin
+srcHBSelect "top_tb" -win $_nTrace1
+srcHBSelect "top_tb" -win $_nTrace1
+srcHBSelect "top_tb" -win $_nTrace1
+srcHBSelect "\$root" -win $_nTrace1
+srcSetScope -win $_nTrace1 "\$root" -delim "."
+srcHBSelect "\$root.main_phase" -win $_nTrace1
+srcHBSelect "\$root.main_phase" -win $_nTrace1
+srcSetScope -win $_nTrace1 "\$root.main_phase" -delim "."
+srcHBSelect "\$root" -win $_nTrace1
+srcSetScope -win $_nTrace1 "\$root" -delim "."
+srcHBSelect "\$root.bit" -win $_nTrace1
+srcSetScope -win $_nTrace1 "\$root.bit" -delim "."
+srcHBSelect "\$root.main_phase" -win $_nTrace1
+uvmCreateFactWin
+uvmFactWinOICOn
+uvmFactWinQuickFilterOn
+srcDeselectAll -win $_nTrace1
+uvmCreateSeqWin
+uvmSeqWinQuickFilterOn
+uvmSeqWinQuickFilterOn
+srcHBSelect "top_tb.asyn_fifo1.fifomem11" -win $_nTrace1
+srcHBSelect "top_tb.asyn_fifo1.sync_r2w11" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top_tb.asyn_fifo1.sync_r2w11" -delim "."
+schCreateWindow -delim "." -win $_nSchema1 -scope "top_tb.asyn_fifo1.sync_r2w11"
+verdiWindowBeWindow -win $_nSchema_8
+schFindHierFormCreate -win $_nSchema8
+schSelect -win $_nSchema8 -inst "sync_r2w\(@1\):Always0:31:35:Reg"
+schPushViewIn -win $_nSchema8
+srcSelect -win $_nTrace1 -range {31 35 1 16 1 1}
+srcDeselectAll -win $_nTrace1
+uvmCloseSeqWin
+uvmCloseFactWin
+uvmClosePhaseWin
+srcHBSelect "top_tb.asyn_fifo1.rpte_empty11" -win $_nTrace1
+srcHBSelect "top_tb.asyn_fifo1.fifomem11" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top_tb.asyn_fifo1.fifomem11" -delim "."
+srcSignalViewExpand -row 9
+srcSignalViewSelect "top_tb.asyn_fifo1.fifomem11.mem\[0\]\[7:0\]"
+srcSignalViewSelect "top_tb.asyn_fifo1.fifomem11.mem\[0\]\[7:0\]"
+srcSignalViewSelect "top_tb.asyn_fifo1.fifomem11.mem\[0\]\[7:0\]"
+tfgBehaviorAnalysis -incr -clockSkew 0 -loopUnroll 0 -bboxEmptyModule 0 -bboxIgnoreProtected 0 -cellModel 0 -confined_flattern 32768 -ans 2
+srcSignalViewAddSelectedToWave -win $_nTrace1
+srcSignalViewSelect "top_tb.asyn_fifo1.fifomem11.mem\[0\]\[7:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+schCloseWindow -win $_nSchema8
+verdiWindowResize -win $_Verdi_1 -10 "14" "1920" "1028"

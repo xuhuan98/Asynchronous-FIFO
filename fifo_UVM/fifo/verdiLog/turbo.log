@@ -1,0 +1,3 @@
+Command Line: /home/fguo/Synopsys/Verdi_installed/platform/LINUXAMD64/bin/Novas -full64 -ssf tb.fsdb -f filelist
+uname(Linux fguo-OptiPlex-7040 4.15.0-58-generic #64~16.04.1-Ubuntu SMP Wed Aug 7 14:10:35 UTC 2019 x86_64)
+au time 3244.545795 113.533575 160.204697 delta 279412736 279412736 total 663158784 663158784
